@@ -1,0 +1,61 @@
+keyword,category_id,priority
+battery,electronics,20
+charger,electronics,20
+cable,electronics,15
+adapter,electronics,15
+usb,electronics,15
+hdmi,electronics,20
+phone case,electronics,15
+screen protector,electronics,15
+headphone,electronics,20
+earbuds,electronics,20
+speaker,electronics,15
+keyboard,electronics,15
+mouse,electronics,15
+paper towel,household,20
+toilet paper,household,20
+detergent,household,20
+soap,household,15
+cleaning,household,15
+trash bag,household,20
+light bulb,household,15
+dish soap,household,20
+laundry,household,15
+sponge,household,15
+shampoo,personal_care,20
+toothpaste,personal_care,20
+deodorant,personal_care,20
+razor,personal_care,15
+lotion,personal_care,15
+sunscreen,personal_care,15
+conditioner,personal_care,15
+body wash,personal_care,15
+pen,office,10
+notebook,office,15
+printer,office,15
+paper,office,10
+stapler,office,15
+folder,office,10
+binder,office,10
+dog food,pets,25
+cat food,pets,25
+pet treat,pets,20
+litter,pets,25
+toy,kids,15
+diaper,kids,25
+baby,kids,15
+formula,kids,25
+wipes,kids,15
+vitamin,health,15
+medicine,health,20
+prescription,health,25
+bandage,health,15
+first aid,health,20
+book,books_media,15
+kindle,books_media,20
+audible,books_media,20
+magazine,books_media,10
+wine,alcohol,20
+beer,alcohol,20
+liquor,alcohol,20
+spirits,alcohol,15

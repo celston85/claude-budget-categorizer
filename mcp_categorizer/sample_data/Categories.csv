@@ -1,0 +1,46 @@
+category_id,category_name,parent_category,description,monthly_budget,notes
+groceries,Groceries,Food & Dining,Supermarkets and grocery stores,600,
+restaurants,Restaurants,Food & Dining,Dining out and takeout,200,
+coffee,Coffee & Cafes,Food & Dining,Coffee shops and cafes,50,
+alcohol,Alcohol & Bars,Food & Dining,Bars and liquor stores,50,
+fast_food,Fast Food,Food & Dining,Quick service restaurants,75,
+electronics,Electronics,Shopping,Gadgets and tech accessories,100,
+clothing,Clothing & Apparel,Shopping,Clothes and shoes,150,
+household,Household Supplies,Shopping,Cleaning and paper goods,100,
+home_improvement,Home Improvement,Shopping,Hardware and tools,50,
+furniture,Furniture & Decor,Shopping,Furniture and decorations,0,As needed
+books_media,Books & Media,Shopping,Books and digital media,25,
+office,Office Supplies,Shopping,Office and work supplies,25,
+general_shopping,General Shopping,Shopping,Other retail purchases,100,
+health,Health & Medical,Health & Personal,Medical and pharmacy,100,
+personal_care,Personal Care,Health & Personal,Toiletries and grooming,50,
+fitness,Fitness & Sports,Health & Personal,Gym and sports,50,
+gas,Gas & Fuel,Transportation,Gas stations and EV charging,200,
+auto_maintenance,Auto Maintenance,Transportation,Car repairs and maintenance,50,
+parking,Parking,Transportation,Parking fees,25,
+public_transit,Public Transit,Transportation,Bus and train,0,
+rideshare,Rideshare & Taxi,Transportation,Uber and Lyft,50,
+auto_insurance,Auto Insurance,Transportation,Car insurance,150,
+rent_mortgage,Rent/Mortgage,Home & Utilities,Housing payment,2500,
+utilities,Utilities,Home & Utilities,Electric gas water,200,
+internet_phone,Internet & Phone,Home & Utilities,Internet and cell phone,150,
+home_insurance,Home Insurance,Home & Utilities,Renters or homeowners insurance,100,
+entertainment,Entertainment,Entertainment,Movies and events,100,
+streaming,Streaming Services,Entertainment,Netflix Spotify etc,50,
+games,Games & Gaming,Entertainment,Video games,25,
+hobbies,Hobbies,Entertainment,Hobby supplies,50,
+airfare,Airfare,Travel,Flights,0,Variable
+lodging,Lodging,Travel,Hotels and Airbnb,0,Variable
+travel_other,Travel - Other,Travel,Other travel expenses,0,Variable
+kids,Kids & Family,Family,Childcare and school,0,
+pets,Pets,Family,Pet food and vet,100,
+gifts,Gifts,Family,Gifts for others,50,
+investments,Investments,Financial,Investment contributions,500,
+fees,Bank Fees,Financial,ATM and service fees,0,Avoid
+taxes,Taxes,Financial,Tax payments,0,Variable
+salary,Salary,Income,Regular paycheck,0,Income
+refund,Refund,Income,Refunds and returns,0,Income
+income_other,Other Income,Income,Miscellaneous income,0,Income
+subscriptions,Subscriptions,Other,Recurring subscriptions,100,
+charity,Charity & Donations,Other,Charitable donations,50,
+uncategorized,Uncategorized,Other,Needs manual categorization,0,Review these

@@ -1,0 +1,75 @@
+# Google API Credentials
+credentials.json
+token.json
+token.json.bak
+
+# Amazon Credentials (SENSITIVE - never commit!)
+amazon_credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / secrets
+.env
+.mcp.json
+
+# Generated files
+*.log
+last_run_stats.json
+dashboard.html
+dashboards/
+.progress.json
+output/
+
+# Personal data — sample emails, debug files, conversation history
+*.eml
+*.rtf
+debug_email_*
+email_analysis.json
+gmail_return_ex.txt
+sample_email_html.html
+sample_email_text.txt
+sample_missing_categories.txt
+prior-session-context.txt
+test_email.html
+check_391_email.py
+search_emails.py
+search_drive.py
+downloaded_attachments/
+downloaded_drive_files/
+encrypted_pdfs/
+diagrams/
+
+# Session/project notes (personal)
+TASKS.md
+project_status.md
+
+# One-off / legacy scripts (not needed for setup)
+amazon_order_parser.py
+amazon_bulk_match.py
+analyze_amazon_emails.py
+analyze_unmatched.py
+find_unmatched_emails.py
+multi_order_parser.py
+
+# Claude Code local config
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

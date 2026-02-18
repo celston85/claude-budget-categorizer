@@ -1,0 +1,80 @@
+merchant_pattern,category_id,confidence,notes
+whole foods,groceries,100,Always groceries
+trader joe,groceries,100,Always groceries
+safeway,groceries,100,Always groceries
+kroger,groceries,100,Always groceries
+publix,groceries,100,Always groceries
+aldi,groceries,100,Always groceries
+sprouts,groceries,100,Always groceries
+heb,groceries,100,Always groceries
+wegmans,groceries,100,Always groceries
+food lion,groceries,100,Always groceries
+ralphs,groceries,100,Always groceries
+vons,groceries,100,Always groceries
+albertsons,groceries,100,Always groceries
+shell,gas,100,Gas station
+chevron,gas,100,Gas station
+exxon,gas,100,Gas station
+mobil,gas,100,Gas station
+arco,gas,100,Gas station
+costco gas,gas,100,Costco gas station
+sams club fuel,gas,100,Sams Club gas
+76 gas,gas,100,Gas station
+starbucks,coffee,100,Coffee shop
+dunkin,coffee,100,Coffee shop
+peets,coffee,100,Coffee shop
+blue bottle,coffee,100,Coffee shop
+philz,coffee,100,Coffee shop
+mcdonald,fast_food,100,Fast food
+burger king,fast_food,100,Fast food
+wendy,fast_food,100,Fast food
+taco bell,fast_food,100,Fast food
+chick-fil-a,fast_food,100,Fast food
+chipotle,fast_food,100,Fast food
+subway,fast_food,100,Fast food
+in-n-out,fast_food,100,Fast food
+five guys,fast_food,100,Fast food
+netflix,streaming,100,Streaming service
+spotify,streaming,100,Streaming service
+hulu,streaming,100,Streaming service
+disney+,streaming,100,Streaming service
+apple music,streaming,100,Streaming service
+hbo max,streaming,100,Streaming service
+prime video,streaming,100,Streaming service
+youtube premium,streaming,100,Streaming service
+pandora,streaming,100,Streaming service
+uber trip,rideshare,100,Rideshare
+lyft,rideshare,100,Rideshare
+cvs,health,80,Usually pharmacy
+walgreens,health,80,Usually pharmacy
+rite aid,health,80,Usually pharmacy
+home depot,home_improvement,100,Home improvement store
+lowes,home_improvement,100,Home improvement store
+ace hardware,home_improvement,100,Hardware store
+best buy,electronics,100,Electronics store
+apple store,electronics,100,Apple store
+micro center,electronics,100,Electronics store
+comcast,internet_phone,100,Internet/Cable
+xfinity,internet_phone,100,Internet/Cable
+at&t,internet_phone,100,Phone/Internet
+verizon,internet_phone,100,Phone/Internet
+t-mobile,internet_phone,100,Phone
+spectrum,internet_phone,100,Internet/Cable
+uber eats,restaurants,100,Food delivery
+doordash,restaurants,100,Food delivery
+grubhub,restaurants,100,Food delivery
+postmates,restaurants,100,Food delivery
+instacart,groceries,100,Grocery delivery
+amazon fresh,groceries,100,Grocery delivery
+amazon basics,household,60,Usually household items
+amazon prime - movie rental,entertainment,100,Prime Video movie rentals
+amazon prime - subscription,subscriptions,100,Amazon Prime membership
+amazon kids - movie rental,entertainment,100,Kids movie rentals
+amazon - grocery tips,groceries,100,Delivery tips for groceries
+amazon cafe,restaurants,100,Amazon campus cafe
+amazon digital - movie rental,entertainment,100,Digital movie rentals
+refund,refund,90,Usually a refund
+return,refund,80,Usually a return
+venmo,uncategorized,50,Could be anything - check
+zelle,uncategorized,50,Could be anything - check
+paypal,uncategorized,50,Could be anything - check

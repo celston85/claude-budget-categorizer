@@ -1,0 +1,7 @@
+# Cloud Function dependencies
+functions-framework>=3.0.0
+google-api-python-client>=2.100.0
+google-auth>=2.23.0
+google-cloud-pubsub>=2.18.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0

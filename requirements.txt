@@ -1,0 +1,12 @@
+# Core dependencies for Amazon Order Parser ecosystem
+google-api-python-client>=2.100.0
+google-auth-httplib2>=0.1.1
+google-auth-oauthlib>=1.1.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Optional (for legacy amazon_order_parser.py)
+parsel>=1.8.0
+html5lib>=1.1
+inscriptis>=2.3.0
+amazon-orders>=0.0.10
