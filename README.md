@@ -47,17 +47,68 @@ The setup script walks you through:
 
 ## Google Sheets Structure
 
-### Budget Config Sheet (3 tabs)
+You need **two** Google Sheets. The spreadsheet names don't matter — the system uses Sheet IDs (from the URL). But **tab names within each sheet must match exactly** (case-sensitive).
 
-| Tab | Purpose |
-|-----|---------|
-| `Categories` | Master list of budget categories (id, name, parent, budget) |
-| `Merchant Rules` | Pattern → category mappings with confidence scores |
-| `Keywords` | Keyword → category hints with priority |
+### Sheet 1: Budget Config
 
-### Processed Transactions Sheet
+This sheet has **3 tabs**. During `./setup.sh`, choose "new" to auto-create a sheet pre-populated with sample categories, merchant rules, and keywords. Or create manually with these exact tab names and columns:
 
-Your bank transactions with added categorization columns: `claude_category`, `category_source`, `category_confidence`, `needs_review`, etc.
+#### `Categories` tab
+
+| Column | Required | Description |
+|--------|----------|-------------|
+| `category_id` | Yes | Unique lowercase identifier (e.g. `groceries`) |
+| `category_name` | Yes | Display name (e.g. `Groceries`) |
+| `parent_category` | No | Grouping (e.g. `Food & Dining`) |
+| `description` | No | What belongs here |
+| `monthly_budget` | No | Your budget amount (for reference) |
+| `notes` | No | Any notes |
+
+#### `Merchant Rules` tab
+
+| Column | Required | Description |
+|--------|----------|-------------|
+| `merchant_pattern` | Yes | Case-insensitive substring to match (e.g. `whole foods`) |
+| `category_id` | Yes | Must exist in Categories tab |
+| `confidence` | Yes | 0-100. Use 100 for definite matches, 50+ for auto-categorize |
+| `notes` | No | Why this rule exists |
+
+#### `Keywords` tab
+
+| Column | Required | Description |
+|--------|----------|-------------|
+| `keyword` | Yes | Word to match in transaction descriptions (e.g. `battery`) |
+| `category_id` | Yes | Must exist in Categories tab |
+| `priority` | Yes | 1-100, higher = stronger signal |
+
+Sample data for all three tabs is included in `mcp_categorizer/sample_data/`.
+
+### Sheet 2: Processed Transactions
+
+This sheet must already exist with your bank transaction data (e.g. from [Tiller](https://www.tillerhq.com/) or `transaction_matcher.py`). The tab name must be exactly **`Processed Transactions`**.
+
+The system reads these columns:
+
+| Column | Required | Description |
+|--------|----------|-------------|
+| `Date` | Yes | Transaction date |
+| `Description` | Yes | Transaction description (merchant name, etc.) |
+| `Amount` | Yes | Transaction amount |
+| `Account` | Yes | Account name (e.g. your credit card) |
+| `Category` | No | Original category from your bank/Tiller |
+
+The MCP server **adds** these columns automatically (created if missing):
+
+| Column | Description |
+|--------|-------------|
+| `claude_category` | Assigned category ID |
+| `category_source` | How it was categorized: `merchant_rule`, `keyword`, `claude`, or `manual` |
+| `category_confidence` | 0-100 confidence score |
+| `categorized_at` | Timestamp |
+| `categorized_by` | System identifier (e.g. `mcp_v1`) |
+| `needs_review` | `TRUE` if flagged for human review |
+| `review_reason` | Why it was flagged |
+| `previous_category` | For undo capability |
 
 ## Environment Variables
 
